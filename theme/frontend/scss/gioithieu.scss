@@ -1,0 +1,36 @@
+@import "style.scss";
+.banner-gt{
+    position: relative;
+    overflow: hidden;
+    
+}
+.gt-banner-img{
+    display: flex;
+    .banner-img1,.banner-img2{
+        padding: cal(10);
+    }
+}
+.content-gt{
+    position: relative;
+    z-index: 1;
+    &::after{
+        background-image: url(../image/logo2222.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 41%;
+        z-index: 222222;
+        width: cal(300);
+        height: cal(200);
+
+    }
+    .title-heading{
+        font-size: cal(20);
+        font-family: "Cabin-regular";
+        font-weight: 600;
+        padding-bottom: cal(20);
+    }
+}

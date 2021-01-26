@@ -1,0 +1,148 @@
+@import "style.scss";
+.content-contact {
+    .breadcum-bg {
+        background: #fff;
+        .breadcrumb {
+            background: #fff;
+            margin-bottom: 0;
+        }
+        .active {
+            color: $yellow;
+        }
+    }
+}
+.header-bottom {
+    border-bottom: 1px solid #ebebeb;
+}
+.contact-info {
+    h3 {
+        font-family: "Cabin-regular";
+        font-size: cal(20);
+        color: $black;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: cal(20);
+    }
+    .list-contact {
+        position: relative;
+        padding-left: cal(55);
+    }
+    .add-contact::before {
+        content: "";
+        position: absolute;
+        background: url(../image/add-contact-img.png);
+        width: cal(40);
+        height: cal(40);
+        background-size: cover;
+        left: 0;
+        top: calc(50%-cal(20));
+    }
+    .phone-contact {
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../image/phone-contact-img.png);
+            width: cal(40);
+            height: cal(40);
+            background-size: cover;
+            left: 0;
+            top: calc(50%-cal(20));
+        }
+        a:hover {
+            color: $yellow;
+        }
+    }
+    .email-contact {
+        a {
+            &:hover {
+                color: $yellow;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../image/mail-contact-img.png);
+            width: cal(40);
+            height: cal(40);
+            background-size: cover;
+            left: 0;
+            top: calc(50%-cal(20));
+        }
+    }
+    .web-contact {
+        a {
+            &:hover {
+                color: $yellow;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../image/web-contact-img.png);
+            width: cal(40);
+            height: cal(40);
+            background-size: cover;
+            left: 0;
+            top: calc(50%-cal(20));
+        }
+    }
+    .contact-name {
+        font-size: cal(16);
+        font-weight: 600;
+    }
+    .send-contact-form {
+        input {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            padding: cal(15);
+            border-radius: cal(10);
+            margin-bottom: cal(15);
+            &::placeholder {
+                font-style: italic;
+            }
+        }
+        textarea {
+            display: block;
+            padding: cal(15);
+            border-radius: cal(10);
+            width: 100%;
+            max-width: 100%;
+            &::placeholder {
+                font-style: italic;
+            }
+        }
+    }
+    button {
+        display: block;
+        text-align: center;
+        border: 1px solid #fead13;
+        background: #fead13;
+        padding: cal(8) cal(15);
+        border-radius: cal(10);
+        margin: 10px 0px;
+        color: rgb(255, 255, 255);
+        &:hover {
+            background: $white;
+            color: $yellow;
+            transition: 0.5s;
+        }
+    }
+    .contact-logo {
+        a {
+            display: block;
+            text-align: center;
+            img {
+                max-width: cal(350);
+            }
+        }
+    }
+    .map-contact {
+        border: 1px solid $yellow;
+        iframe {
+            width: 100%;
+            max-height: cal(440);
+            height: cal(440);
+        }
+    }
+}

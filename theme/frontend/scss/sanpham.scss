@@ -1,0 +1,148 @@
+@import "style.scss";
+.banner-sp {
+    .banner-sp-img {
+        img {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+.content-sp {
+    .breadcum-bg {
+        background: #e9ecef;
+        .breadcrumb {
+            margin-bottom: 0;
+            background: none;
+            li:nth-child(2) {
+                color: $yellow;
+            }
+        }
+    }
+    .side-bar-left {
+        border: 1px solid #e9ecef;
+        padding: cal(6);
+        border-radius: 8px;
+        position: relative;
+        .side-bar-header {
+            padding: cal(10) 0;
+
+            a {
+                font-size: cal(20);
+                position: absolute;
+                top: 17px;
+                left: 20px;
+                text-transform: uppercase;
+            }
+            h3 {
+                font-size: cal(20);
+                font-family: "Cabin-regular";
+            }
+            border-bottom: 1px solid #e9ecef;
+        }
+        .category-pro {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $yellow;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.side-bar-news {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding-bottom: cal(35);
+    h3 {
+        font-family: "Cabin-regular";
+        font-size: cal(20);
+        font-weight: 550;
+        padding: 10px;
+    }
+    .bar-news-img{
+        img{
+            padding-left: cal(10);
+        }
+    }
+    .bar-news-title{
+        a{
+            font-size: cal(16);
+            &:hover{
+                color: $yellow;
+                transition: .3s;
+            }
+        }
+       
+    }
+    .show-more-sp{
+        float: right;
+        border: none;
+        top: 0;
+        padding: 0;
+        font-size: cal(14);
+        color: red;
+        padding-right: cal(15);
+        a{
+           &:hover{
+               color:red ;;
+           }
+        }
+    }
+}
+.bar-date{
+    span{
+        font-size: cal(14);
+        padding-right: cal(5);
+        i{
+            padding-right: cal(5);
+        }
+    }
+ }
+
+//
+.menu_danhmuc {
+    background: #fff;
+    border-radius: 0 0 cal(10) cal(10);
+    ul {
+        li {
+            border-bottom: cal(1) solid #dadae5;
+            position: relative;
+            i {
+                position: absolute;
+                content: "\f067";
+                top: cal(18);
+                right: cal(20);
+                font-family: "Font Awesome 5 Free";
+                font-size: cal(12);
+                cursor: pointer;
+            }
+            ul {
+                display: none;
+                position: static;
+                li {
+                    a {
+                        font-size: cal(16);
+                        display: block;
+                        padding: cal(8) cal(30);
+                    }
+                    &:first-child {
+                        border-top: cal(1) solid #dadae5;
+                    }
+                }
+            }
+            a {
+                font-size: cal(18);
+                display: block;
+                padding: cal(10) 0;
+                margin-left: cal(70);
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

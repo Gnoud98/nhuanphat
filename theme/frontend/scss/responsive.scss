@@ -1,0 +1,110 @@
+@import "style.scss" ;
+@media(max-width:1024px){
+    .fixed nav ul li a{
+        font-size: cal(14) !important;
+    }
+}
+@media(max-width:991px){
+    .fixed{
+        nav{
+            display: none;
+        }
+        .cart{
+            i{
+                font-size: cal(25);
+                &:hover{
+                    color: $yellow;
+                }
+            }
+        }
+        .menu-toggle{
+            display: block;
+        }
+
+    }
+    .fixed-2{
+        .frm-search{
+            display: none;
+        }
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1) !important;
+        max-height: cal(90);
+    }
+    .introduce {
+        padding:cal(25) 0 ;
+        .intro-video{
+            .intro-box {
+                position: relative;
+                z-index: 1;
+                right: 0 !important;
+            }
+        }
+    }
+  h1{
+      text-align: center;
+      font-size: cal(20);
+  }
+ .product{
+     h2{
+         font-size: cal(35);
+         font-weight: bold;
+         text-align: center;
+     }
+     .product-slider{
+         display: none;
+     }
+     .product-item{
+         margin: cal(10) cal(10);
+     }
+ }
+ .banner{
+     margin-top: cal(20);
+ }
+ .news .hot-news .news-swiper .swiper-pagination{
+     display: none;
+ }
+ .news .hot-news .heading-title{
+     display: none;
+ }
+ .news-section{
+    background: rgba(196, 196, 196, 0.15);
+ }
+ .heading-title-bl{
+     margin-bottom: cal(30);
+ }
+ .news .hot-news{
+     box-shadow: none;
+ }
+ .box-shadow{
+     box-shadow: none;
+     border-radius: unset;
+ }
+ .news-title{
+     display: none;
+ }
+ .fixed .img-logo img{
+     width: cal(75);
+ }
+ .heading-title{
+     padding-bottom: unset;
+ }
+ .feed-back-item{
+     height: cal(315);
+     max-height: 315;
+ }
+}
+@media(max-width:768px){
+    .video-hot .video-swiper .swiper-button-next{
+        right: 8px !important;
+    }
+    .video-hot .video-swiper .swiper-button-prev{
+        left: 8px !important;
+    }
+    .menu-mb{
+        width: 50% !important;
+    }
+}
+@media(max-width:576px){
+    .menu-mb{
+        width: cal(268) !important;
+    }
+}

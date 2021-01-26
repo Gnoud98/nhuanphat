@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme/frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/frontend/swiper-Swiper5/package/css/swiper.min.css">
+    <link rel="stylesheet" href="theme/frontend/css/animate.min.css">
+    <link rel="stylesheet" href="theme/frontend/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="theme/frontend/css/fontawesome-free-5.15.1-web/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="theme/frontend/css/reset.css">
+    <link rel="stylesheet" href="theme/frontend/scss/chitiet-giohang.css">
+    <title>Chi tiết giỏ hàng</title>
+</head>
+
+<body>
+    <header class="header" id="fixed-top">
+        <div class="d-md-block d-none wrapper-header wow bounceInLeft">
+            <div class="container">
+                <div class="top-header">
+                    <div class="top-header-contact">
+                        <a href="#">
+                            <i class="fas fa-phone"></i>
+                            Hotline:0395307272
+                        </a>
+                        <a href="">
+                            <i class="far fa-envelope"></i>
+                            DrC.chuyengialamsach@gmail.com
+                        </a>
+
+                    </div>
+                    <div class="top-header-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed header-bottom ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1  d-lg-block d-flex align-items-center justify-content-between flex-wrap">
+                        <div class="img-logo">
+                            <a href="index.html">
+                                <img src="theme/frontend/image/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 als ">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="gioithieu.html">20 Năm kinh nghiệm</a>
+                                </li>
+                                <li class="active">
+                                    <a href="sanpham.html">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="tintuc.html">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-8 als">
+                        <div class="search">
+                            <form action="" class="frm-search">
+                                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                                <button type="submit">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-2 als">
+                        <a href="" class="cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="detail-cart">
+        <div class="breadcum-bg">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="breadcrumb_pd">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fas fa-home"></i><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Giỏ hàng</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="deatail-cart mt-lg-3">
+        <div class="container">
+            <h2 class="heading-title text-center">
+                CHI TIẾT GIỎ HÀNG
+            </h2>
+            <div class="step-order">
+                <ul>
+                    <li>
+                        <a href="" class="step-active">
+                            <span>1</span>
+                            Giỏ hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="stepping">
+                            <span>2</span>
+                            Thanh toán
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="stepping">
+                            <span>3</span>
+                            Tạo thành công đơn hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="table-cart">
+                <form action="">
+                    <div class="cart-page table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product_thumb">
+                                        Ảnh
+                                    </th>
+                                    <th class="product_thumb">
+                                        Sản Phẩm
+                                    </th>
+                                    <th class="product_thumb">
+                                        Giá
+                                    </th>
+                                    <th class="product_thumb">
+                                        Số lượng
+                                    </th>
+                                    <th class="product_thumb">
+                                        Tổng tiền
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product_thumb">
+                                        <a href="">
+                                            <img src="theme/frontend/image/DD lam sach nen gach 2.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td class="product_name">
+                                        <div class="product-info">
+                                            <h3>
+                                                <a href="">
+                                                    Nước lau kính Dr.C
+                                                </a>
+                                            </h3>
+                                            <p class="cart-pro-code">
+                                                Mã sản phẩm: DrC-LK400400
+                                            </p>
+                                            <p class="cart-pro-size">
+                                                Dung tích: 400 ml
+                                            </p>
+                                            <a href="">
+                                                <i class="far fa-trash-alt"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">
+                                        30.000 VNĐ
+                                    </td>
+                                    <td class="number-product">
+                                        <div class="number-product-item">
+                                            <span class="down" id="down">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                            <input type="text" value="1" class="input-value">
+                                            <span class="up" id="up">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="product_total">
+                                        90.000 VNĐ
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="order-cart">
+                        <div class="buy-cart-item">
+                            <p class="order-item">
+                                Tổng tiền
+                            </p>
+                            <p class="order-value">
+                                100,000 Đ
+                            </p>
+                        </div>
+                        <div class="buy-cart-item">
+                            <p class="order-item">
+                               Phí vận chuyển
+                            </p>
+                            <p class="order-value">
+                                20,000 Đ
+                            </p>
+                        </div>
+                        <div class="buy-cart-item">
+                            <p class="order-item ">
+                               Tổng thanh toán
+                            </p>
+                            <p class="order-value text-danger">
+                               120,000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="payment-btn">
+                        <a href=""type="submit" class="buy-continue">Tiếp tục mua hàng</a>
+                        <a href="" class="submit-order-btn">Đặt hàng</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="wow bounceInUp">
+        <nav class="menu-ft mt-5">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="">tin Tức</a>
+                    </li>
+                    <li>
+                        <a style="border-right: none;" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-footer">
+            <div class="container">
+                <div class="form-mail">
+                    <h3 class="mail-title">
+                        Đăng ký nhận tin sản phẩm
+                    </h3>
+                    <p class="mail-desc">
+                        Hãy đăng ký để nhận những thông tin mới nhất về các sản phẩm của Dr.C
+                    </p>
+                    <form action="" class="form-send-mail">
+                        <div class="mail-input">
+                            <input type="text" name="email" placeholder="Địa chỉ e-mail">
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h3 class="title-ft">
+                            liên hệ với dr.c
+                        </h3>
+                        <div class="address-contact">
+                            <p class="contact-name">Địa chỉ</p>
+                            <p class="contact-des">160, Tôn Đức Thắng - Hàng Bột - Đống Đa - Hà Nội</p>
+                        </div>
+                        <div class="phone-contact">
+                            <p class="contact-name">
+                                Hotline
+                            </p>
+                            <a href="" class="contact-des">0395307272</a>
+                        </div>
+                        <div class="email-contact">
+                            <p class="contact-name">Email</p>
+                            <a href="" class="contact-des">
+                                DrC.chuyengialamsach@gmail.com
+                            </a>
+                        </div>
+                        <div class="web-contact">
+                            <p class="contact-name">Website</p>
+                            <a href="" class="contact-des">
+                                chuyengialamsach.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h3 class="title-ft">
+                            sản phẩm
+                        </h3>
+
+                        <a href="" class="contact-des">
+                            Nước lau kính Dr.c
+                        </a>
+                        <a href="" class="contact-des">
+                            Chất thông tắc Dr.C - Be-easy
+                        </a>
+                        <a href="" class="contact-des">
+                            Dung dịch làm sạch vách kính, vòi sen Dr.C-4G 500ml
+                        </a>
+                        <a href="" class="contact-des">
+                            Dung dịch tẩy xi măng, làm sạch sàn gạch
+                        </a>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h3 class="title-ft">Hỗ trợ khách hàng</h3>
+                        <a href="" class="contact-des">
+                            Chính sách CTV
+                        </a>
+                        <br>
+                        <a href="" class="contact-des">Chính sách đại lý</a>
+                        <br>
+                        <a href="" class="contact-des">
+                            Chính sách phân phối
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="social">
+                            <h3 class="title-ft">
+                                Kết nối
+                            </h3>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-youtube"></i>
+                                Youtube
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-google-plus-g"></i>
+                                Google
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coppy-right">
+            <div class="container text-white">
+                <p>
+                    © Bản quyền thuộc về Chuyên gia Làm sạch Dr.C
+                </p>
+            </div>
+        </div>
+    </footer>
+    <button class="smooth back-to-top"><i class="fa fa-caret-up" aria-hidden="true"></i></button>
+
+    <script src="theme/frontend/js/jquery-3.5.1.js"></script>
+    <script src="theme/frontend/js/bootstrap.min.js"></script>
+    <script src="theme/frontend/slick-master/slick-master/slick/slick.min.js"></script>
+    <script src="theme/frontend/js/wow.min.js"></script>
+    <script src="theme/frontend/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="theme/frontend/swiper-Swiper5/package/js/swiper.min.js"></script>
+    <script src="theme/frontend/js/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

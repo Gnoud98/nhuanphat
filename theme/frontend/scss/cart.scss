@@ -1,0 +1,50 @@
+@import "style.scss";
+@import "thanhtoan.scss";
+.cart{
+    .heading-title{
+        color: #000;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .success-order{
+        .order-title{
+            display: flex;
+            align-items: center;
+            img{
+                max-width: cal(37);
+                max-height: cal(37);
+            }
+            .order-text{
+                padding-left: cal(10);
+                font-size: cal(30);
+                
+            }
+        }
+        .order-item{
+            ul{
+                padding-left: cal(54);
+                li{
+                  list-style: disc;
+                }
+            }
+        }
+        .payment-btn{
+            text-align: left;
+            margin-top: cal(20);
+            padding-left: cal(50);
+            .submit-order-btn {
+                background: rgb(254, 173, 19);
+                color: rgb(255, 255, 255);
+                border: 1px solid #f6a520;
+                padding: 7px 21px;
+                border-radius: 5px;
+                &:hover{
+                    color: #f6a520;
+                    background: #fff;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}

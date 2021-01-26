@@ -1,0 +1,136 @@
+@import "style.scss";
+@import "chitiet-giohang.scss";
+.pay {
+    .send-info-order {
+        .title-des {
+            font-size: 25px;
+            line-height: 29px;
+            padding: 5px 0px 0px;
+           
+        }
+        .send-tt {
+            display: inline-block;
+            max-width: 30%;
+            font-size: 14px;
+            width: 100%;
+            margin-right: 10px;
+        }
+        input {
+            display: inline-block;
+            max-width: 65%;
+            width: 100%;
+            padding: 5px 10px;
+            font-style: italic;
+            border: 1px solid #989898;
+            border-radius: 10px;
+            margin: 10px 0px;
+        }
+        select {
+            max-width: 65%;
+            width: 100%;
+            margin: 6px;
+            border: 1px solid #989898;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-left: -2px;
+            appearance: none;
+            background-repeat: no-repeat !important;
+            background-size: 17px !important;
+            background-position: right 10px center !important;
+            color: #989898;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .note {
+            display: flex;
+            align-items: center;
+            textarea {
+                display: inline-block;
+                max-width: 65%;
+                width: 100%;
+                padding: 5px 10px;
+                font-style: italic;
+                border: 1px solid #989898;
+                border-radius: 10px;
+                margin: 10px 0px;
+            }
+        }
+    }
+    .payment-format {
+        margin-top: 10px;
+        display: block;
+        padding: 10px 15px;
+        background: #f9f9f9;
+    }
+
+    .paylist {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 1px solid #d8d8d8;
+        white-space: nowrap;
+        background: #ebebeb;
+        border-radius: 10px;
+        .delete-pro {
+            flex: 0 0 5%;
+            font-size: cal(20);
+            color: $yellow;
+            padding-left: cal(10);
+            &:hover{
+                color: #000;
+                transition: .3s;
+            }
+        }
+        .item-img {
+            flex: 0 0 10%;
+            img {
+                max-width: 75px;
+                min-width: 55px;
+            }
+        }
+        .pay-pro-info{
+            flex: 0 0 65%;
+            .pay-pro-name{
+                font-size: cal(16);
+                font-weight: bold;
+                margin-bottom: cal(16);
+            }
+        }
+        .pay-pro-price{
+            flex: 0 0 20%;
+    text-align: right;
+        }
+        
+    }
+    .order-cart {
+        margin: 25px 0px;
+        border: 1px solid #e4e4e4;
+        border-radius: 10px;
+        max-width: 60%;
+        margin-left: auto;
+        .buy-cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 12px;
+            border-bottom: 1px solid #e4e4e4;
+            background: #f9f9f9;
+        }
+    }
+    .payment-btn{
+        text-align: right;
+        .submit-order-btn {
+            background: rgb(254, 173, 19);
+            color: rgb(255, 255, 255);
+            border: 1px solid #f6a520;
+            padding: 7px 21px;
+            border-radius: 5px;
+            &:hover{
+                color: #f6a520;
+                background: #fff;
+                transition: .3s;
+            }
+        }
+    }
+}

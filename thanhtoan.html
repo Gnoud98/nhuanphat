@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme/frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/frontend/swiper-Swiper5/package/css/swiper.min.css">
+    <link rel="stylesheet" href="theme/frontend/css/animate.min.css">
+    <link rel="stylesheet" href="theme/frontend/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="theme/frontend/css/fontawesome-free-5.15.1-web/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="theme/frontend/css/reset.css">
+    <link rel="stylesheet" href="theme/frontend/scss/thanhtoan.css">
+    <title>Thanh toán</title>
+</head>
+
+<body>
+    <header class="header" id="fixed-top">
+        <div class="d-md-block d-none wrapper-header wow bounceInLeft">
+            <div class="container">
+                <div class="top-header">
+                    <div class="top-header-contact">
+                        <a href="#">
+                            <i class="fas fa-phone"></i>
+                            Hotline:0395307272
+                        </a>
+                        <a href="">
+                            <i class="far fa-envelope"></i>
+                            DrC.chuyengialamsach@gmail.com
+                        </a>
+
+                    </div>
+                    <div class="top-header-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed header-bottom ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1  d-lg-block d-flex align-items-center justify-content-between flex-wrap">
+                        <div class="img-logo">
+                            <a href="index.html">
+                                <img src="theme/frontend/image/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 als ">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="gioithieu.html">20 Năm kinh nghiệm</a>
+                                </li>
+                                <li class="active">
+                                    <a href="sanpham.html">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="tintuc.html">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-8 als">
+                        <div class="search">
+                            <form action="" class="frm-search">
+                                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                                <button type="submit">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-2 als">
+                        <a href="" class="cart">
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="pay">
+        <div class="breadcum-bg" style="background: #ebebeb;">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="breadcrumb_pd">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fas fa-home"></i><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item " style="color: #f6a520 ;">Thanh toán</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="pay-form">
+            <div class="container">
+                <h2 class="heading-title">
+                    Thanh toán
+                </h2>
+                <div class="step-order">
+                    <ul>
+                        <li>
+                            <a href="" class="stepping">
+                                <span>1</span>
+                                Giỏ hàng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="step-active">
+                                <span>2</span>
+                                Thanh toán
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="stepping">
+                                <span>3</span>
+                                Tạo thành công đơn hàng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="POST" class="send-info-order ">
+                    <div class="row mt-lg-3 mt-2">
+                        <div class="col-lg-7 col-md-7 col-12">
+                            <h3 class="title-des">
+                                Thông tin thanh toán
+                            </h3>
+                            <span class="send-tt">
+                                Họ và tên
+                            </span>
+                            <input type="text" name="name" crequired="" text-crequired="Nhập tên của bạn"
+                                placeholder="Nhập tên của bạn">
+                            <br>
+                            <span class="send-tt">Email</span>
+                            <input type="text" name="email" crequired="" text-crequired="Nhập email của bạn"
+                                placeholder="Nhập email của bạn">
+                            <br>
+                            <span class="send-tt">
+                                Số điện thoại
+                            </span>
+                            <input type="number" name="phone" crequired="" text-crequired="Nhập số điện thoại của bạn"
+                                placeholder="Nhập số điện thoại của bạn">
+                            <br>
+                            <span class="send-tt">
+                                Tỉnh/ thành phố
+                            </span>
+                            <select name="city">
+                                <option value="">Tỉnh/ Thành phố</option>
+                                <option value="1">An Giang</option>
+                                <option value="13">Bà Rịa - Vũng Tàu</option>
+                                <option value="76">Bắc Giang</option>
+                                <option value="87">Bắc Kạn</option>
+                                <option value="68">Bạc Liêu</option>
+                                <option value="96">Bắc Ninh</option>
+                                <option value="270">Bạch Long Vĩ</option>
+                                <option value="105">Bến Tre</option>
+                                <option value="23">Bình Dương</option>
+                                <option value="56">Bình Định</option>
+                                <option value="33">Bình Phước</option>
+                                <option value="45">Bình Thuận</option>
+                                <option value="129">Cà Mau</option>
+                                <option value="139">Cần Thơ</option>
+                                <option value="115">Cao Bằng</option>
+                                <option value="271">Cát Hải</option>
+                                <option value="655">Cầu Ngang</option>
+                                <option value="523">Cồn Cỏ</option>
+                                <option value="720">Đà Nẵng</option>
+                                <option value="732">Đắk Lắk</option>
+                                <option value="729">Đăk Nông</option>
+                                <option value="748">Đắk Nông</option>
+                                <option value="709">Điện Biên</option>
+                                <option value="586">Đông Hưng</option>
+                                <option value="755">Đồng Nai</option>
+                                <option value="767">Đồng Tháp</option>
+                                <option value="149">Gia Lai</option>
+                                <option value="179">Hà Giang</option>
+                                <option value="191">Hà Nam</option>
+                                <option value="198">Hà Nội</option>
+                                <option value="229">Hà Tĩnh</option>
+                                <option value="254">Hải Dương</option>
+                                <option value="267">Hải Phòng</option>
+                                <option value="283">Hậu Giang</option>
+                                <option value="167">Hoà Bình</option>
+                                <option value="724">Hoàng Sa</option>
+                                <option value="587">Hưng Hà</option>
+                                <option value="243">Hưng Yên</option>
+                                <option value="292">Khánh Hòa</option>
+                                <option value="302">Kiên Giang</option>
+                                <option value="311">Kiên Hải</option>
+                                <option value="588">Kiến Xương</option>
+                                <option value="318">Kon Tum</option>
+                                <option value="329">Lai Châu</option>
+                                <option value="364">Lâm Đồng</option>
+                                <option value="377">Lạng Sơn</option>
+                                <option value="354">Lào Cai</option>
+                                <option value="338">Long An</option>
+                                <option value="495">Lý Sơn</option>
+                                <option value="782">Miền Nam</option>
+                                <option value="389">Nam Định</option>
+                                <option value="717">Nậm Pồ</option>
+                                <option value="400">Nghệ An</option>
+                                <option value="134">Ngọc Hiển</option>
+                                <option value="422">Ninh Bình</option>
+                                <option value="431">Ninh Thuận</option>
+                                <option value="439">Phú Thọ</option>
+                                <option value="453">Phú Yên</option>
+                                <option value="463">Quảng Bình</option>
+                                <option value="472">Quảng Nam</option>
+                                <option value="491">Quảng Ngãi</option>
+                                <option value="506">Quảng Ninh</option>
+                                <option value="521">Quảng Trị</option>
+                                <option value="589">Quỳnh Phụ</option>
+                                <option value="532">Sóc Trăng</option>
+                                <option value="544">Sơn La</option>
+                                <option value="670">Tây Ninh</option>
+                                <option value="585">Thái Bình</option>
+                                <option value="590">Thái Bình</option>
+                                <option value="594">Thái Nguyên</option>
+                                <option value="591">Thái Thụy</option>
+                                <option value="557">Thanh Hóa</option>
+                                <option value="604">Thừa Thiên - Huế</option>
+                                <option value="615">Tiền Giang</option>
+                                <option value="592">Tiền Hải</option>
+                                <option value="627">TP Hồ Chí Minh</option>
+                                <option value="652">Trà Vinh</option>
+                                <option value="300">Trường Sa</option>
+                                <option value="662">Tuyên Quang</option>
+                                <option value="680">Vĩnh Long</option>
+                                <option value="689">Vĩnh Phúc</option>
+                                <option value="317">Vĩnh Thuận</option>
+                                <option value="593">Vũ Thư</option>
+                                <option value="699">Yên Bái</option>
+                            </select>
+                            <br>
+                            <span class="send-tt">
+                                Quận/huyện
+                            </span>
+                            <select name="district">
+                                <option value="">Quận huyện</option>
+                            </select>
+                            <br>
+                            <span class="send-tt">
+                                Địa chỉ nhận hàng
+                            </span>
+                            <input type="text" name="address" crequired="" text-crequired="Địa chỉ cụ thể"
+                                placeholder="Địa chỉ cụ thể">
+                            <br>
+                            <div class="note"> <span class="send-tt">Ghi chú</span><textarea name="note"
+                                    placeholder="Ghi chú"></textarea> </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-12">
+                            <h3 class="title-des">Hình thức thanh toán
+                            </h3>
+                            <p class="payment-format">
+                                Thanh toán khi nhận hàng
+                            </p>
+                        </div>
+
+                    </div>
+                    <h3 class="title-des">
+                        Thông tin đơn hàng
+                    </h3>
+                    <div class="payment-pro-list mt-xl-4 mt-lg-3 mt-2">
+                        <div class="paylist">
+                            <a href="" class="delete-pro">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                            <a href="" class="item-img">
+                                <img src="theme/frontend/image/DD lam sach vach kinh 3.png" alt="">
+                            </a>
+                            <div class="pay-pro-info">
+                                <h3>
+                                    <p class="pay-pro-name">
+                                        Dung dịch làm sạch vách kính, vòi sen Dr.C - 4G
+                                    </p>
+                                </h3>
+                                <p class="pay-pro-qty">Số lượng 2</p>
+                                <p class="pay-pro-size">Dung tích: 500ml</p>
+                            </div>
+                            <p class="pay-pro-price">100,000đ</p>
+
+                        </div>
+                    </div>
+                    <div class="order-cart">
+                        <div class="buy-cart-item">
+                            <p class="order-item">
+                                Tổng tiền
+                            </p>
+                            <p class="order-value">
+                                100,000 Đ
+                            </p>
+                        </div>
+                        <div class="buy-cart-item">
+                            <p class="order-item">
+                                Phí vận chuyển
+                            </p>
+                            <p class="order-value">
+                                20,000 Đ
+                            </p>
+                        </div>
+                        <div class="buy-cart-item">
+                            <p class="order-item ">
+                                Tổng thanh toán
+                            </p>
+                            <p class="order-value text-danger">
+                                120,000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="payment-btn">
+                        <a href="" type="submit" class="submit-order-btn">Đặt hàng</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="wow bounceInUp">
+        <nav class="menu-ft mt-5">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="">tin Tức</a>
+                    </li>
+                    <li>
+                        <a style="border-right: none;" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-footer">
+            <div class="container">
+                <div class="form-mail">
+                    <h3 class="mail-title">
+                        Đăng ký nhận tin sản phẩm
+                    </h3>
+                    <p class="mail-desc">
+                        Hãy đăng ký để nhận những thông tin mới nhất về các sản phẩm của Dr.C
+                    </p>
+                    <form action="" class="form-send-mail">
+                        <div class="mail-input">
+                            <input type="text" name="email" placeholder="Địa chỉ e-mail">
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h3 class="title-ft">
+                            liên hệ với dr.c
+                        </h3>
+                        <div class="address-contact">
+                            <p class="contact-name">Địa chỉ</p>
+                            <p class="contact-des">160, Tôn Đức Thắng - Hàng Bột - Đống Đa - Hà Nội</p>
+                        </div>
+                        <div class="phone-contact">
+                            <p class="contact-name">
+                                Hotline
+                            </p>
+                            <a href="" class="contact-des">0395307272</a>
+                        </div>
+                        <div class="email-contact">
+                            <p class="contact-name">Email</p>
+                            <a href="" class="contact-des">
+                                DrC.chuyengialamsach@gmail.com
+                            </a>
+                        </div>
+                        <div class="web-contact">
+                            <p class="contact-name">Website</p>
+                            <a href="" class="contact-des">
+                                chuyengialamsach.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h3 class="title-ft">
+                            sản phẩm
+                        </h3>
+
+                        <a href="" class="contact-des">
+                            Nước lau kính Dr.c
+                        </a>
+                        <a href="" class="contact-des">
+                            Chất thông tắc Dr.C - Be-easy
+                        </a>
+                        <a href="" class="contact-des">
+                            Dung dịch làm sạch vách kính, vòi sen Dr.C-4G 500ml
+                        </a>
+                        <a href="" class="contact-des">
+                            Dung dịch tẩy xi măng, làm sạch sàn gạch
+                        </a>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h3 class="title-ft">Hỗ trợ khách hàng</h3>
+                        <a href="" class="contact-des">
+                            Chính sách CTV
+                        </a>
+                        <br>
+                        <a href="" class="contact-des">Chính sách đại lý</a>
+                        <br>
+                        <a href="" class="contact-des">
+                            Chính sách phân phối
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="social">
+                            <h3 class="title-ft">
+                                Kết nối
+                            </h3>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-youtube"></i>
+                                Youtube
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-google-plus-g"></i>
+                                Google
+                            </a>
+                            <br>
+                            <a href="" class="contact-des">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coppy-right">
+            <div class="container text-white">
+                <p>
+                    © Bản quyền thuộc về Chuyên gia Làm sạch Dr.C
+                </p>
+            </div>
+        </div>
+    </footer>
+    <button class="smooth back-to-top"><i class="fa fa-caret-up" aria-hidden="true"></i></button>
+    <script src="theme/frontend/js/jquery-3.5.1.js"></script>
+    <script src="theme/frontend/js/bootstrap.min.js"></script>
+    <script src="theme/frontend/slick-master/slick-master/slick/slick.min.js"></script>
+    <script src="theme/frontend/js/wow.min.js"></script>
+    <script src="theme/frontend/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="theme/frontend/swiper-Swiper5/package/js/swiper.min.js"></script>
+    <script src="theme/frontend/js/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
